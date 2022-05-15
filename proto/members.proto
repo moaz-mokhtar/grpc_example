@@ -1,0 +1,15 @@
+syntax = "proto3";
+package members;
+
+service Membership {
+    rpc AddMember (AddMemberRequest) returns (AddMemberResponse);
+}
+
+message AddMemberRequest {
+    string name = 1;
+}
+
+message AddMemberResponse {
+    bool successful = 1;
+    string message = 2;
+}

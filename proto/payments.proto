@@ -15,3 +15,5 @@ message BTCPaymentResponse {
     bool   successful = 1;
     string message    = 2;
 }
+
+
